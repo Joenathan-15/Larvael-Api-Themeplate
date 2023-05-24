@@ -11,6 +11,7 @@ class Employee extends Model
     use HasFactory;
     use SoftDeletes;
 
+    //for store data to database
     public static function store($data){
         $employee = new Employee;
         $employee->name = $data->name;
